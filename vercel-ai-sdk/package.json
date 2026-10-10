@@ -1,0 +1,17 @@
+{
+  "name": "freetheai-cookbook-vercel-ai-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Runnable example: the Vercel AI SDK with createOpenAICompatible and FreeTheAI",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "ai": "^5.0.0",
+    "@ai-sdk/openai-compatible": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

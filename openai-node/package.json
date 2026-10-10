@@ -1,0 +1,16 @@
+{
+  "name": "freetheai-cookbook-openai-node",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Runnable example: the OpenAI Node SDK with a FreeTheAI base URL",
+  "scripts": {
+    "start": "node example.mjs"
+  },
+  "dependencies": {
+    "openai": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

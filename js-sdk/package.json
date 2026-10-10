@@ -1,0 +1,16 @@
+{
+  "name": "freetheai-cookbook-js-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Runnable example for the FreeTheAI JavaScript SDK",
+  "scripts": {
+    "start": "node example.mjs"
+  },
+  "dependencies": {
+    "freetheai": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

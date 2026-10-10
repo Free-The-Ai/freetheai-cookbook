@@ -1,0 +1,45 @@
+name: CI
+
+# Syntax and build checks only. CI never calls the live API.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile every Python recipe
+        run: python -m compileall -q $(git ls-files '*.py')
+
+  javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check syntax of every JavaScript recipe
+        run: |
+          for file in $(git ls-files '*.mjs'); do node --check "$file"; done
+
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Build the Go recipe
+        working-directory: go-sdk
+        run: |
+          go mod tidy
+          go vet ./...
