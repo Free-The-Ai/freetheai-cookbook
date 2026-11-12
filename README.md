@@ -17,7 +17,7 @@
 
 # FreeTheAI Cookbook
 
-Runnable examples for the free, OpenAI-compatible [FreeTheAI](https://freetheai.org) API. Each recipe is in its own folder with a short README and the code to run it.
+Runnable examples for the OpenAI-compatible [FreeTheAI](https://freetheai.org) API. Each recipe is in its own folder with a short README and the code to run it.
 
 Use the official SDKs, the OpenAI clients with a different base URL, plain `curl`, or the frameworks you already know: LangChain, LlamaIndex, and the Vercel AI SDK.
 
@@ -27,9 +27,9 @@ Use the official SDKs, the OpenAI clients with a different base URL, plain `curl
 export FREETHEAI_API_KEY="ftai_..."   # create a key at https://freetheai.org/dashboard/api-keys
 ```
 
-Do the [daily check-in](https://freetheai.org/checkin) once a day for the free models. The free tier is 50 requests a day, reset at 00:00 UTC.
+Add funds to your wallet (from $5, crypto or card) and follow a provider at [freetheai.org/providers](https://freetheai.org/providers). Each request bills the tokens it used at the listed price.
 
-Example model IDs used throughout: `fta/zai/glm-5.3`, `fta/zai/glm-5.3-flash`, `fta/kimi/k3`, and `fta/mmx/minimax-m3`. Check the live list with `GET https://api.freetheai.org/v1/models`.
+Example model IDs used throughout: `glm-5.3`, `glm-5.3-flash`, `kimi-k3`, and `minimax-m3`. Check the live list with `GET https://api.freetheai.org/v1/models`.
 
 ## Recipes
 

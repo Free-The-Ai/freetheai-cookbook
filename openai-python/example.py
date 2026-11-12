@@ -15,7 +15,7 @@ client = OpenAI(
 )
 
 reply = client.chat.completions.create(
-    model="fta/zai/glm-5.3",
+    model="glm-5.3",
     messages=[{"role": "user", "content": "Name three uses for a paperclip."}],
     max_tokens=200,
 )

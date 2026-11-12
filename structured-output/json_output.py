@@ -12,7 +12,7 @@ from freetheai import FreeTheAI
 client = FreeTheAI()
 
 reply = client.chat.completions.create(
-    model="fta/zai/glm-5.3",
+    model="glm-5.3",
     messages=[
         {
             "role": "system",

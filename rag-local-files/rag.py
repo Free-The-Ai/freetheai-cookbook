@@ -17,7 +17,7 @@ from pathlib import Path
 
 from freetheai import FreeTheAI
 
-MODEL = "fta/zai/glm-5.3"
+MODEL = "glm-5.3"
 CHUNK_WORDS = 120
 TOP_K = 4
 WORD = re.compile(r"[a-z0-9]+")

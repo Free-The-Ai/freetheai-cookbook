@@ -8,4 +8,4 @@ export FREETHEAI_API_KEY="ftai_..."
 python chat.py
 ```
 
-The same `llm` object works in chains, agents, and retrieval setups. Use any `fta/...` model ID from the models list.
+The same `llm` object works in chains, agents, and retrieval setups. Use any model ID from the models list.

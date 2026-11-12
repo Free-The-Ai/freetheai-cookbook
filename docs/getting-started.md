@@ -1,5 +1,5 @@
 ---
-description: Get a FreeTheAI API key, do the daily check-in, set the base URL, and run your first cookbook recipe in a few minutes.
+description: Get a FreeTheAI API key, add funds, set the base URL, and run your first cookbook recipe in a few minutes.
 ---
 
 # Getting started
@@ -8,9 +8,7 @@ description: Get a FreeTheAI API key, do the daily check-in, set the base URL, a
 
 1. Sign up at [freetheai.org](https://freetheai.org) and confirm your email.
 2. Open [API keys](https://freetheai.org/dashboard/api-keys) and create a key. It starts with `ftai_` and is shown once, so copy all of it.
-3. Free models need the [daily check-in](https://freetheai.org/checkin), one quick captcha a day.
-
-The free tier is 50 requests a day, reset at 00:00 UTC.
+3. Add funds to your wallet (from $5, crypto or card) and follow a provider at [freetheai.org/providers](https://freetheai.org/providers). Each request bills the tokens it used at the listed price.
 
 Store the key in your environment. Never commit it to a repository:
 
@@ -28,14 +26,14 @@ https://api.freetheai.org/v1
 
 ## 3. Model IDs
 
-Model IDs look like `fta/<provider>/<model>`. The recipes use these:
+A model ID is the model name, such as `glm-5.3`; `<provider>/<model>` picks one provider. The recipes use these:
 
 | Model ID | Good for |
 | --- | --- |
-| `fta/zai/glm-5.3` | General chat and reasoning |
-| `fta/zai/glm-5.3-flash` | Faster, lighter replies |
-| `fta/kimi/k3` | Long-form writing |
-| `fta/mmx/minimax-m3` | General chat |
+| `glm-5.3` | General chat and reasoning |
+| `glm-5.3-flash` | Faster, lighter replies |
+| `kimi-k3` | Long-form writing |
+| `minimax-m3` | General chat |
 
 Check the live list with `GET https://api.freetheai.org/v1/models` or on [freetheai.org/models](https://freetheai.org/models).
 

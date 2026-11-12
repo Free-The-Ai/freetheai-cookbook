@@ -11,7 +11,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 
 llm = ChatOpenAI(
-    model="fta/zai/glm-5.3",
+    model="glm-5.3",
     base_url="https://api.freetheai.org/v1",
     api_key=os.environ["FREETHEAI_API_KEY"],
     temperature=0.4,

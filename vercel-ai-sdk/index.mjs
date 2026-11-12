@@ -13,13 +13,13 @@ const freetheai = createOpenAICompatible({
 });
 
 const { text } = await generateText({
-  model: freetheai("fta/zai/glm-5.3"),
-  prompt: "Write a one-line tagline for a free AI API.",
+  model: freetheai("glm-5.3"),
+  prompt: "Write a one-line tagline for an AI model marketplace.",
 });
 console.log(text);
 
 const result = streamText({
-  model: freetheai("fta/zai/glm-5.3-flash"),
+  model: freetheai("glm-5.3-flash"),
   prompt: "List three uses of embeddings, one per line.",
 });
 for await (const piece of result.textStream) {

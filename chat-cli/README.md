@@ -8,4 +8,4 @@ export FREETHEAI_API_KEY="ftai_..."
 python chat.py
 ```
 
-Type `/reset` to clear the history and `/quit` to leave. Pass a model ID to try another model, for example `python chat.py fta/kimi/k3`.
+Type `/reset` to clear the history and `/quit` to leave. Pass a model ID to try another model, for example `python chat.py kimi-k3`.

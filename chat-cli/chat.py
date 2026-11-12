@@ -2,8 +2,8 @@
 
     pip install freetheai
     export FREETHEAI_API_KEY="ftai_..."
-    python chat.py                       # uses fta/zai/glm-5.3-flash
-    python chat.py fta/kimi/k3           # pick a model
+    python chat.py                       # uses glm-5.3-flash
+    python chat.py kimi-k3           # pick a model
 
 Type /quit to leave and /reset to clear the history.
 """
@@ -12,12 +12,12 @@ import sys
 
 from freetheai import FreeTheAI, StreamInterruptedError
 
-DEFAULT_MODEL = "fta/zai/glm-5.3-flash"
+DEFAULT_MODEL = "glm-5.3-flash"
 
 
 def main() -> None:
     model = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_MODEL
-    client = FreeTheAI(fallback_models=["fta/zai/glm-5.3-flash"])
+    client = FreeTheAI(fallback_models=["glm-5.3-flash"])
     history = [{"role": "system", "content": "You are a friendly, concise assistant."}]
     print(f"Chatting with {model}. /reset clears the history, /quit exits.")
 

@@ -20,7 +20,7 @@ func main() {
 	ctx := context.Background()
 
 	reply, err := client.Chat.Completions.New(ctx, freetheai.ChatCompletionParams{
-		Model:    "fta/zai/glm-5.3",
+		Model:    "glm-5.3",
 		Messages: []freetheai.Message{{Role: "user", Content: "Write a haiku about open models."}},
 	})
 	if err != nil {
@@ -30,7 +30,7 @@ func main() {
 
 	fmt.Println("\nStreamed:")
 	stream, err := client.Chat.Completions.NewStreaming(ctx, freetheai.ChatCompletionParams{
-		Model:    "fta/zai/glm-5.3-flash",
+		Model:    "glm-5.3-flash",
 		Messages: []freetheai.Message{{Role: "user", Content: "Count from one to five, one word per line."}},
 	})
 	if err != nil {

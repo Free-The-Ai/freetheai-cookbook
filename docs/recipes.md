@@ -22,4 +22,4 @@ description: The list of FreeTheAI cookbook recipes - SDKs, OpenAI clients, curl
 | [structured-output](https://github.com/Free-The-Ai/freetheai-cookbook/tree/main/structured-output) | JSON output that your code parses | `python json_output.py` |
 | [chat-cli](https://github.com/Free-The-Ai/freetheai-cookbook/tree/main/chat-cli) | A tiny chat program for the terminal | `python chat.py` |
 
-Every recipe needs `FREETHEAI_API_KEY` in the environment. Each one makes only a few requests, so a run uses a small part of the free daily allowance.
+Every recipe needs `FREETHEAI_API_KEY` in the environment. Each one makes only a few requests, so a run costs very little.

@@ -12,7 +12,7 @@ echo "== Chat completion =="
 curl -sS "${BASE}/chat/completions" \
   -H "${AUTH}" \
   -H "Content-Type: application/json" \
-  -d '{"model": "fta/zai/glm-5.3", "messages": [{"role": "user", "content": "Say hello in five words."}], "max_tokens": 60}'
+  -d '{"model": "glm-5.3", "messages": [{"role": "user", "content": "Say hello in five words."}], "max_tokens": 60}'
 echo
 
 echo "== Models on your key (first 5) =="

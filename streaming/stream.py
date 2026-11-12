@@ -11,7 +11,7 @@ client = FreeTheAI()
 
 try:
     for text in client.chat.completions.stream_text(
-        model="fta/zai/glm-5.3-flash",
+        model="glm-5.3-flash",
         messages=[{"role": "user", "content": "Tell me a four-line story about a lighthouse."}],
     ):
         print(text, end="", flush=True)

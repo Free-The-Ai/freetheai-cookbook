@@ -12,5 +12,5 @@ The setup pages give the base URL, the key, and the settings each app needs. You
 
 - your API key from [API keys](https://freetheai.org/dashboard/api-keys),
 - the base URL `https://api.freetheai.org/v1`,
-- a model ID such as `fta/zai/glm-5.3` from the [models list](https://freetheai.org/models),
-- the [daily check-in](https://freetheai.org/checkin) for the free models.
+- a model ID such as `glm-5.3` from the [models list](https://freetheai.org/models),
+- money in your wallet and a provider you follow ([freetheai.org/providers](https://freetheai.org/providers)).

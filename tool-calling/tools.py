@@ -9,7 +9,7 @@ import json
 
 from freetheai import FreeTheAI
 
-MODEL = "fta/zai/glm-5.3"
+MODEL = "glm-5.3"
 
 
 def get_weather(city: str) -> dict:

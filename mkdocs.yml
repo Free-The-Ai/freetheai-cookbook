@@ -1,5 +1,5 @@
 site_name: FreeTheAI Cookbook
-site_description: Runnable examples for the free, OpenAI-compatible FreeTheAI API - SDKs in Python, JavaScript, and Go, the OpenAI clients, curl, streaming, tool calling, web search, LangChain, LlamaIndex, the Vercel AI SDK, and RAG.
+site_description: Runnable examples for the OpenAI-compatible FreeTheAI API - SDKs in Python, JavaScript, and Go, the OpenAI clients, curl, streaming, tool calling, web search, LangChain, LlamaIndex, the Vercel AI SDK, and RAG.
 site_url: https://free-the-ai.github.io/freetheai-cookbook/
 site_author: FreeTheAI
 repo_url: https://github.com/Free-The-Ai/freetheai-cookbook
